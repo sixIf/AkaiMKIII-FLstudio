@@ -1,4 +1,4 @@
-# name=CustomMk3ArmRecording
+# name=AkaiMpkMiniMk3FTW
 import transport 
 from itertools import chain
 import midi 
@@ -165,9 +165,6 @@ liveLoop_Knobs = range(79,87)
 liveLoop = LiveLoop(LiveLoop_CCPad, liveLoop_ProgPad, liveLoop_Knobs)
 
 # FL studio Events
-def actualPluginName():
-    plugins.getPluginName(channels.channelNumber())
-    return actualPluginName
 
 def OnInit():
 	print('Akai MPK Mini Script by Skeul \nYour Device port number is:', device.getPortNumber())
